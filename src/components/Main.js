@@ -15,10 +15,10 @@ const Main = () => (
   <main>
     <Switch>
       <Route exact path="/" component={HomePage} />
-      <Route exact path="/manageteam" component={ManageTeamPage} />
-      <Route exact path="/profile" component={ProfilePage} />
-      <Route exact path="/registration" component={RegistrationPage} />
-      <Route exact path="/team" component={TeamPage} />
+      <Route path="/profile" component={ProfilePage} />
+      <Route path="/manageteam" component={ManageTeamPage} />
+      <Route path="/registration" component={RegistrationPage} />
+      <Route path="/team" component={TeamPage} />
     </Switch>
   </main>
 );

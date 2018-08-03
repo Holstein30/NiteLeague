@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class RegistrationPage extends Component {
   render() {
-    return <div>Page here</div>;
+    return <div>Testing Registration Page</div>;
   }
 }
 
