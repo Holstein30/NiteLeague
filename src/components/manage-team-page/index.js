@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class ManageTeam extends Component {
   render() {
-    return <div>Page here</div>;
+    return <div>Testing Manage Team Page</div>;
   }
 }
 
