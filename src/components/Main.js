@@ -5,6 +5,7 @@ import ManageTeamPage from "./manage-team-page";
 import ProfilePage from "./profile-page";
 import RegistrationPage from "./registration-page";
 import TeamPage from "./team-page";
+import FetchTest from "./fetchTest-page"
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -19,6 +20,7 @@ const Main = () => (
       <Route path="/manageteam" component={ManageTeamPage} />
       <Route path="/registration" component={RegistrationPage} />
       <Route path="/team" component={TeamPage} />
+      <Route path="/fetchTest" component={FetchTest} />
     </Switch>
   </main>
 );
