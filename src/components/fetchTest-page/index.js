@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Fetch from 'react-fetch';
 
-class FetchTest extends Component {
+export default class FetchTest extends Component {
   constructor(props) {
     super(props);
 
@@ -8,17 +9,21 @@ class FetchTest extends Component {
       data: null,
     };
   }
+ 
 
-  // componentDidMount() {
-  //   fetch('https://api.mydomain.com')
-  //     .then(response => response.json())
-  //     .then(data => this.setState({ data }));
-  // }
 
   render() {
-    return <div>Fetch Page Rendering</div>;
+  return (
+  <Fetch url='http://192.168.1.2:8080/api/users'>
+    <TestComponent/>
+    </Fetch>);
   }
 
 }
 
-export default FetchTest;
+class TestComponent extends React.Component{
+  render(){
+    console.log(this.props)
+    return <div/>
+  }
+}
