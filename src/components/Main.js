@@ -7,11 +7,11 @@ import RegistrationPage from "./registration-page";
 import TeamPage from "./team-page";
 import FetchTest from "./fetchTest-page"
 
-// The Main component renders one of the three provided
-// Routes (provided that one matches). Both the /roster
-// and /schedule routes will match any pathname that starts
-// with /roster or /schedule. The / route will only match
-// when the pathname is exactly the string "/"
+// The Main component will render our various pages based of routing path
+// only the home page will render at the exact path of "/"
+// every other page will render at the matching base path, however,
+// more specific routes can be added with various parameters
+// including specific profiles of users and teams
 const Main = () => (
   <main>
     <Switch>

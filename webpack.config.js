@@ -1,5 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
+// the htmlPlugin is the file location for
+// our finished, bundled html
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html"
@@ -21,6 +23,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        // The css loader contains options for allowing individual components
+        // to have their own styling
+        // The localIdentName hashes id's and class names as to
+        // not conflict with any other classes of the same name
+        // anywhere else in the transpiled css file
         use: [
           { loader: "style-loader" },
           {
