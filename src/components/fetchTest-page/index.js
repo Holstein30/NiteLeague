@@ -11,7 +11,6 @@ export default class FetchTest extends Component {
   }
  
 
-
   render() {
   return (
   <Fetch url='http://192.168.1.2:8080/api/users'>
