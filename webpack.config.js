@@ -10,7 +10,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
 module.exports = {
   devServer: {
     historyApiFallback: true,
-    port: 3000
+    port: 3300
   },
   module: {
     rules: [

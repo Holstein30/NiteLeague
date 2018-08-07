@@ -1,8 +1,3 @@
-import React from "react";
-export default props => {
-  return (
-    <a href="#">
-      <button className={props.className}>{props.name}</button>
-    </a>
-  );
-};
+import GlobalButtonsMain from "./global-buttons-main";
+
+export default GlobalButtonsMain;
