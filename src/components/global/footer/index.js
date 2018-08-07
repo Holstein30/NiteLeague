@@ -5,6 +5,12 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <hr />
         <div className="social-links">
           <Button className="facebook-btn" name="Facebook" />
           <Button className="twitter-btn" name="Twitter" />

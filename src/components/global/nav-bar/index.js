@@ -12,6 +12,8 @@ class Navbar extends Component {
         <Button className="shop-btn" name="Shop" />
         <Button className="support-btn" name="Support" />
         <Button className="login-btn" name="Login/Sign Up" />
+        <hr />
+       
       </div>
     );
   }
