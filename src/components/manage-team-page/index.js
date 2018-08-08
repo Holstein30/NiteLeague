@@ -1,9 +1,3 @@
-import React, { Component } from "react";
+import ManageTeamPage from "./manage-team-page";
 
-class ManageTeam extends Component {
-  render() {
-    return <div>Testing Manage Team Page</div>;
-  }
-}
-
-export default ManageTeam;
+export default ManageTeamPage;

@@ -1,9 +1,3 @@
-import React, { Component } from "react";
-
-class TeamPage extends Component {
-  render() {
-    return <div>Testing Team Page</div>;
-  }
-}
+import TeamPage from "./team-page";
 
 export default TeamPage;

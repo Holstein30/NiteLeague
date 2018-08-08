@@ -1,9 +1,3 @@
-import React, { Component } from "react";
-
-class RegistrationPage extends Component {
-  render() {
-    return <div>Testing Registration Page</div>;
-  }
-}
+import RegistrationPage from "./registration-page";
 
 export default RegistrationPage;
