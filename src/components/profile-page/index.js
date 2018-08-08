@@ -1,9 +1,3 @@
-import React, { Component } from "react";
-
-class ProfilePage extends Component {
-  render() {
-    return <div>Testing Profile Page</div>;
-  }
-}
+import ProfilePage from "./profile-page";
 
 export default ProfilePage;

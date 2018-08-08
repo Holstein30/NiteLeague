@@ -5,7 +5,6 @@ import ManageTeamPage from "./manage-team-page";
 import ProfilePage from "./profile-page";
 import RegistrationPage from "./registration-page";
 import TeamPage from "./team-page";
-import FetchTest from "./fetchTest-page"
 
 // The Main component will render our various pages based of routing path
 // only the home page will render at the exact path of "/"
@@ -20,7 +19,6 @@ const Main = () => (
       <Route path="/manageteam" component={ManageTeamPage} />
       <Route path="/registration" component={RegistrationPage} />
       <Route path="/team" component={TeamPage} />
-      <Route path="/fetchTest" component={FetchTest} />
     </Switch>
   </main>
 );
