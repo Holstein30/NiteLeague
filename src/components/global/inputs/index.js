@@ -1,7 +1,3 @@
-import GlobalInputsMain from "./global-inputs-main";
-import GlobalInputsLabel from "./global-inputs-label";
+import GlobalInputs from "./global-inputs-main";
 
-export {
-    GlobalInputsLabel,
-    GlobalInputsMain
-}
+export default GlobalInputs;
