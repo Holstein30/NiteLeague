@@ -1,3 +1,3 @@
-import GlobalLinks from "./global-links";
+import GlobalLinksMain from "./global-links-main";
 
-export default GlobalLinks;
+export default GlobalLinksMain;
