@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 class GlobalInputsMain extends Component {
   render(props) {
-    console.log(this.props);
     return (
       <input
         className={this.props.className}
