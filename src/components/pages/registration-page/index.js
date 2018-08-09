@@ -1,3 +1,2 @@
-import RegistrationPage from "./registration-page";
-
-export default RegistrationPage;
+import RegistrationPageMain from "./registration-page-main";
+export default RegistrationPageMain;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Form from "./form";
 
-class RegistrationPage extends Component {
+class RegistrationPageMain extends Component {
   render() {
     return (
       <div style={{ textAlign: "center" }}>
@@ -13,4 +13,4 @@ class RegistrationPage extends Component {
   }
 }
 
-export default RegistrationPage;
+export default RegistrationPageMain;

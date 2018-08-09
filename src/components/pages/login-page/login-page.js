@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Input from "../../global/inputs"
+import Input from "../../global/inputs/global-inputs-main"
 
 class Login extends Component {
   render() {
