@@ -4,8 +4,10 @@ import Input from "../../global/inputs";
 class RegistrationPageFormSignup extends Component {
     render(){
         return (
+         
             <div>
                 <form style={{textAlign:"center"}}>
+         
                 <Input className="registrationInput" type="text" name="Username" pattern=".*" title="" placeholder=" Username" required="true" />
                 <br />
                 <br />
