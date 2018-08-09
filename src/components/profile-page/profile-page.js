@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Avatar from "../global/avatar";
+import ProfilePageLinks from "./links";
 
 class ProfilePage extends Component {
   render() {
@@ -8,6 +9,7 @@ class ProfilePage extends Component {
         <div className="header-container">
           <Avatar avatar="../../../public/images/ph1.jpg" />
           <h1>this.state.username</h1>
+          <ProfilePageLinks />
         </div>
       </div>
     );
