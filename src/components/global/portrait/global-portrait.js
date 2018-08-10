@@ -1,12 +1,12 @@
 import React from "react";
-
+import Avatar from "../avatar";
 export default props => {
   return (
     <div>
-      <Avatar />
-      <div className={props.first}>testing text</div>
-      <div className={props.second}>tseting text</div>
-      <div className={props.third}>tseting text</div>
+      <Avatar avatar="../../../../public/images/ph2.jpg" />
+      <div className="portriat-list-item">{props.name}</div>
+      <div className="portriat-list-item">{props.item1}</div>
+      <div className="portriat-list-item">{props.item2}</div>
     </div>
   );
 };
