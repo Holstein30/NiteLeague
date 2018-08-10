@@ -8,13 +8,32 @@ class CreateLeaguePageMain extends Component {
   render() {
     return (
       <div>
+        <div style={{textAlign: "center"}}>
       <CreateLeaguePageLeagueName />
+      </div>
+      <br />
+      <br />
+      <div style={{float: "left", marginLeft: "15%"}}>
       <CreateLeaguePageLeagueLogo />
-      <CreateLeaguePageInvitePlayers/>
-          <CreateLeaguePageSocialMedia />
-          <CreateLeaguePageLeagueFormat />
-
+      </div>
       
+      <div style={{float: "right", marginRight: "15%"}}>
+      <CreateLeaguePageInvitePlayers/>
+      </div>
+     
+      <div style={{clear: "both", marginLeft: "15%"}}>
+      <br />
+      <br />
+          <CreateLeaguePageSocialMedia />
+      </div>
+      <div style={{float: "right", marginRight: "15%"}}>
+          <CreateLeaguePageLeagueFormat />
+      </div>
+      <div style={{clear: "both"}}>
+      
+      </div>
+
+
       </div>
     );
   }
