@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import CreateTeamSocialMedia from "./social-media/create-team-page-social-media";
-import TitleAndBox from "../../global/title-and-box";
 import CreateTeamPageSocialMedia from "./social-media/create-team-page-social-media";
-
+import CreateTeamPageTeamName from "./team-name/create-team-page-team-name";
+import { CreateTeamPageTeamLogo } from "./team-logo";
+import CreateTeamPageInvitePlayers from "./invite-players/create-team-page-invite-players";
 class CreateTeamPageMain extends Component {
   render() {
     return (
       <div>
-        <TitleAndBox title="Social" width="25%">
+      <CreateTeamPageTeamName />
+      <CreateTeamPageTeamLogo />
+      <CreateTeamPageInvitePlayers/>
           <CreateTeamPageSocialMedia />
-        </TitleAndBox>
+      
       </div>
     );
   }
