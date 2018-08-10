@@ -4,10 +4,7 @@ import Portrait from "../../../global/portrait";
 class TeamPageListLeagues extends Component {
   render() {
     return (
-      <div
-        className="current-leagues-container"
-        style={{ border: "solid 2px" }}
-      >
+      <div className="current-leagues-container">
         <h2>Current Leagues</h2>
         <div className="portrait-container">
           <Portrait
