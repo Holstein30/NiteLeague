@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Avatar from "../../global/avatar";
 import TeamPageLinks from "./links";
+import { LeagueList, RosterList } from "./list";
 
 class TeamPage extends Component {
   render() {
@@ -10,6 +11,8 @@ class TeamPage extends Component {
           <Avatar avatar="../../../../public/images/ph1.jpg" />
           <h1>this.state.username</h1>
           <TeamPageLinks />
+          <RosterList />
+          <LeagueList />
         </div>
       </div>
     );
