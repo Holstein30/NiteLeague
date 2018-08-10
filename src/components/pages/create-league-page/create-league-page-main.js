@@ -3,6 +3,7 @@ import CreateLeaguePageSocialMedia from "./social-media/create-league-page-socia
 import CreateLeaguePageLeagueName from "./league-name/create-league-page-league-name";
 import { CreateLeaguePageLeagueLogo } from "./league-logo";
 import CreateLeaguePageInvitePlayers from "./invite-players/create-league-page-invite-players";
+import CreateLeaguePageLeagueFormat from "./league-format/create-league-page-league-format"
 class CreateLeaguePageMain extends Component {
   render() {
     return (
@@ -11,6 +12,8 @@ class CreateLeaguePageMain extends Component {
       <CreateLeaguePageLeagueLogo />
       <CreateLeaguePageInvitePlayers/>
           <CreateLeaguePageSocialMedia />
+          <CreateLeaguePageLeagueFormat />
+
       
       </div>
     );

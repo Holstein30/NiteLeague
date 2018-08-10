@@ -4,9 +4,9 @@ import Avatar from "../../../global/avatar/global-avatar";
 class CreateLeaguePageLeagueLogo extends Component{
     render(){
         return (<div> 
-            <h3> Team Logo/Avatar </h3>
+            <h3> League Logo/Avatar </h3>
             <Avatar avatar="../../../../../../public/images/league.png" />
-            Team Logo:
+            League Logo:
             <br/>
             <Input type="text" placeholder="League Logo Upload" />
         </div>)

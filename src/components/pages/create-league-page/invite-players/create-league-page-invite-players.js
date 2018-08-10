@@ -10,13 +10,13 @@ class CreateLeaguePageInvitePlayers extends Component {
                 <label>Username: </label>
                 <Input type="text"/>
                 <br />
-                <label>Role: </label>
-                <select>
-                    <option>orange</option>
-                    <option>blue</option>
-                    <option>green</option>
-                    <option>red</option>
-                    </select>
+                <label>Username: </label>
+                <Input type="text"/>
+                <br />
+                <label>Username: </label>
+                <Input type="text"/>
+                <br />
+                <button> Invite </button>
                 </div>
         )
     }
