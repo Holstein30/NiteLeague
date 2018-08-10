@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Input from "../../../global/inputs";
 
-class CreateTeamPageSocialMedia extends Component {
+class CreateLeaguePageSocialMedia extends Component {
   createLabelInputs(){
     const labels = ["Twitter", "Instagram", "YouTube", "Stream"];
     return labels.map((val, index) =>{
@@ -21,4 +21,4 @@ class CreateTeamPageSocialMedia extends Component {
   }
 }
 
-export default CreateTeamPageSocialMedia;
+export default CreateLeaguePageSocialMedia;

@@ -1,2 +1,2 @@
-import CreateTeamPageInvitePlayers from "./create-team-page-invite-players";
-export default CreateTeamPageInvitePlayers;
+import CreateLeaguePageInvitePlayers from "./create-league-page-invite-players";
+export default CreateLeaguePageInvitePlayers;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Input from "../../../global/inputs";
 
-class CreateTeamPageInvitePlayers extends Component {
+class CreateLeaguePageInvitePlayers extends Component {
 
     render() {
         return (
@@ -23,4 +23,4 @@ class CreateTeamPageInvitePlayers extends Component {
 
 }
 
-export default CreateTeamPageInvitePlayers;
+export default CreateLeaguePageInvitePlayers;

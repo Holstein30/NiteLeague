@@ -1,2 +1,2 @@
-import CreateTeamPageTeamName from "./create-team-page-team-name";
-export {CreateTeamPageTeamName};
+import CreateLeaguePageLeagueName from "./create-league-page-league-name";
+export {CreateLeaguePageLeagueName};

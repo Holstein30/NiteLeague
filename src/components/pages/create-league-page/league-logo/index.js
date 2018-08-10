@@ -1,2 +1,2 @@
-import CreateTeamPageTeamLogo from "./create-team-page-team-logo";
-export {CreateTeamPageTeamLogo};
+import CreateLeaguePageLeagueLogo  from "./create-leauge-page-league-logo";
+export {CreateLeaguePageLeagueLogo };
