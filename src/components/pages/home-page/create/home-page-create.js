@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import Button from "../../global/buttons";
+import Button from "../../../global/buttons";
 
-class HomePageJoinLeague extends Component {
+class HomePageCreate extends Component {
   render() {
     return (
       <div>
         <img
-          src="../../../../public/images/ph2.jpg"
-          className="join-league-img"
+          src="../../../../../public/images/ph1.jpg"
+          className="create-league-img"
         />
-        <Button className="join-league-btn" name="Join a League" />
-        <h3>Our Mission</h3>
-        <p className="our-mission-p">
+        <Button className="create-league-btn" name="Create League" />
+        <h3>How It Works</h3>
+        <p className="how-it-works-p">
           Lorem ipsum dolor amet art party truffaut cold-pressed, try-hard pok
           pok mixtape banjo af vape pug salvia tbh hoodie hashtag vegan.
           Knausgaard twee farm-to-table, typewriter poutine locavore narwhal
@@ -25,4 +25,4 @@ class HomePageJoinLeague extends Component {
   }
 }
 
-export default HomePageJoinLeague;
+export default HomePageCreate;

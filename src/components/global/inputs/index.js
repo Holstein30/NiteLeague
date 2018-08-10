@@ -1,3 +1,3 @@
-import GlobalInputsMain from "./global-inputs-main";
+import GlobalInputs from "./global-inputs-main";
 
-export default GlobalInputsMain;
+export default GlobalInputs;
