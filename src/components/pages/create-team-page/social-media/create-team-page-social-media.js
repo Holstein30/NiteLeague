@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Input from "../../../global/inputs"
+import Input from "../../../global/inputs";
 
 class CreateTeamPageSocialMedia extends Component {
   createLabelInputs(){
