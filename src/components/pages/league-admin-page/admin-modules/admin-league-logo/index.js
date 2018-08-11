@@ -1,2 +1,3 @@
-import CreateLeaguePageLeagueLogo  from "./create-leauge-page-league-logo";
-export {CreateLeaguePageLeagueLogo };
+import AdminLeagueLogo from "./admin-league-logo";
+
+export default AdminLeagueLogo;
