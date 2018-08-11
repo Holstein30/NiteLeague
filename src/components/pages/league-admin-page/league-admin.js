@@ -6,7 +6,8 @@ import {
   ChangeResults,
   InvitePlayers,
   LeagueFormat,
-  LeagueLogo
+  LeagueLogo,
+  ManageTeams
 } from "./admin-modules";
 
 class LeagueAdmin extends Component {
@@ -19,6 +20,7 @@ class LeagueAdmin extends Component {
           <LeagueAdminLinks />
           <LeagueLogo />
           <LeagueFormat />
+          <ManageTeams />
           <ChangeResults />
           <InvitePlayers />
           <Button link="#" className="submit-button" name="Submit" />
