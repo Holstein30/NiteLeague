@@ -7,11 +7,26 @@ class AdminManageTeams extends Component {
     return (
       <div className="teams-profile-container">
         <h3>Manage Teams</h3>
-        <div className="team-container">
-          <Avatar avatar="../../../../../../public/images/league.png" />
-          <p>Team Name</p>
-          <Button link="#" className="remove-button" name="Remove" />
-        </div>
+        <table>
+          <tr>
+            <td>
+              <Avatar avatar="../../../../../../public/images/league.png" />
+            </td>
+            <td>Team Name</td>
+            <td>
+              <Button link="#" className="remove-button" name="Remove" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <Avatar avatar="../../../../../../public/images/league.png" />
+            </td>
+            <td>Team Name</td>
+            <td>
+              <Button link="#" className="remove-button" name="Remove" />
+            </td>
+          </tr>
+        </table>
       </div>
     );
   }
