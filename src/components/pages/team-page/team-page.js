@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Avatar from "../../global/avatar";
+import Button from "../../global/buttons";
 import TeamPageLinks from "./links";
 import { LeagueList, RosterList, HistoryList, UpcomingList } from "./list";
 
@@ -15,6 +16,12 @@ class TeamPage extends Component {
           <HistoryList />
           <LeagueList />
           <UpcomingList />
+          <Button
+            link="#"
+            className="join-league-button"
+            name="Join a league"
+          />
+          <Button link="#" className="delete-team-button" name="Delete Team" />
         </div>
       </div>
     );
