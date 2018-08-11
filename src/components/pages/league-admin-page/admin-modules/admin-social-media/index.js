@@ -1,2 +1,3 @@
-import CreateTeamPageSocialMedia from "./create-team-page-social-media";
-export default CreateTeamPageSocialMedia;
+import AdminSocialMedia from "./admin-social-media";
+
+export default AdminSocialMedia;

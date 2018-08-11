@@ -7,7 +7,8 @@ import {
   InvitePlayers,
   LeagueFormat,
   LeagueLogo,
-  ManageTeams
+  ManageTeams,
+  SocialMedia
 } from "./admin-modules";
 
 class LeagueAdmin extends Component {
@@ -20,6 +21,7 @@ class LeagueAdmin extends Component {
           <LeagueAdminLinks />
           <LeagueLogo />
           <LeagueFormat />
+          <SocialMedia />
           <ManageTeams />
           <ChangeResults />
           <InvitePlayers />
