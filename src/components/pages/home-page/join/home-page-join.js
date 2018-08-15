@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import Button from "../../../global/buttons";
 
 class HomePageJoinLeague extends Component {
+  handleEventJoinLeague() {
+    console.log("click 2");
+  }
+
   render() {
     return (
       <div>
@@ -9,7 +13,11 @@ class HomePageJoinLeague extends Component {
           src="../../../../public/images/ph2.jpg"
           className="join-league-img"
         />
-        <Button className="join-league-btn" name="Join a League" />
+        <Button
+          className="join-league-btn"
+          name="Join a League"
+          handleClick={this.handleEventJoinLeague}
+        />
         <h3>Our Mission</h3>
         <p className="our-mission-p">
           Lorem ipsum dolor amet art party truffaut cold-pressed, try-hard pok
