@@ -28,14 +28,6 @@ class ProfilePage extends Component {
       <div>
         <div className="header-container" style={{ border: "solid 2px" }}>
           <Avatar avatar="../../../../../public/images/ph1.jpg" />
-          {this.state.user.map(person => {
-            return (
-              <div>
-                <h1>Name: {person.name}</h1>
-                <h1>Username: {person.username}</h1>
-              </div>
-            );
-          })}
           <ProfilePageLinks />
         </div>
         <CurrentTeam />
