@@ -10,16 +10,27 @@ import Button from "../../global/buttons";
 
 class ProfilePage extends Component {
   componentDidMount() {
-    console.log("before fetchuser is called");
     this.props.fetchUser();
-    console.log(this.props.user);
   }
+
+  showUser() {
+    return <div>{this.props.current[0].name}</div>;
+    // this.props.current.map(user => {
+    //   return <div>user.name</div>;
+    // });
+    console.log(this.props);
+  }
+
   render() {
     return (
       <div>
         <div className="header-container" style={{ border: "solid 2px" }}>
           <Avatar avatar="../../../../../public/images/ph1.jpg" />
-          <h1>{this.props.user}</h1>
+          {this.props.current.length === 0 ? (
+            <h1> User: Not found</h1>
+          ) : (
+            <h1>User: {this.showUser()}</h1>
+          )}
           <ProfilePageLinks />
         </div>
         <CurrentTeam />
@@ -43,7 +54,7 @@ class ProfilePage extends Component {
 // makes the state availible as props of that same name in the component
 function mapStateToProps(state) {
   return {
-    user: state.user
+    current: state.user
   };
 }
 
