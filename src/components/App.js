@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import Navbar from "./global/nav-bar";
 import Footer from "./global/footer";
 import Main from "./Main";
@@ -18,4 +19,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(null)(App);
