@@ -1,8 +1,16 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import Navbar from "./global/nav-bar";
 import Footer from "./global/footer";
 import Main from "./Main";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
+import reduxThunk from "redux-thunk";
+
+import reducers from "./reducers";
+import axios from "axios";
+window.axios = axios;
+
+const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 // The App component holds our base rendering of the navbar and footer
 // which are present on every single page
@@ -10,13 +18,15 @@ import Main from "./Main";
 class App extends Component {
   render() {
     return (
-      <div>
-        <Navbar />
-        <Main />
-        <Footer />
-      </div>
+      <Provider store={store}>
+        <div>
+          <Navbar />
+          <Main />
+          <Footer />
+        </div>
+      </Provider>
     );
   }
 }
 
-export default connect(null)(App);
+export default App;

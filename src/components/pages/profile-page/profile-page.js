@@ -9,12 +9,17 @@ import CurrentLeague from "./list/profile-page-list-leagues";
 import Button from "../../global/buttons";
 
 class ProfilePage extends Component {
+  componentDidMount() {
+    console.log("before fetchuser is called");
+    this.props.fetchUser();
+    console.log(this.props.user);
+  }
   render() {
     return (
       <div>
         <div className="header-container" style={{ border: "solid 2px" }}>
           <Avatar avatar="../../../../../public/images/ph1.jpg" />
-
+          <h1>{this.props.user}</h1>
           <ProfilePageLinks />
         </div>
         <CurrentTeam />
