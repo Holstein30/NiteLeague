@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchUser } from "../../actions";
+import { fetchUser, deleteUser } from "../../actions";
 import { bindActionCreators } from "redux";
 import Avatar from "../../global/avatar";
 import ProfilePageLinks from "./links";
@@ -9,16 +9,21 @@ import CurrentLeague from "./list/profile-page-list-leagues";
 import Button from "../../global/buttons";
 
 class ProfilePage extends Component {
+  constructor(props) {
+    super(props);
+    this.deletedUser = this.deletedUser.bind(this);
+  }
   componentDidMount() {
-    this.props.fetchUser();
+    this.props.fetchUser("35");
   }
 
   showUser() {
-    return <div>{this.props.current[0].name}</div>;
-    // this.props.current.map(user => {
-    //   return <div>user.name</div>;
-    // });
-    console.log(this.props);
+    return <div>{this.props.current.name}</div>;
+  }
+
+  deletedUser(e) {
+    this.props.deleteUser(8);
+    console.log("user deleted");
   }
 
   render() {
@@ -27,7 +32,7 @@ class ProfilePage extends Component {
         <div className="header-container" style={{ border: "solid 2px" }}>
           <Avatar avatar="../../../../../public/images/ph1.jpg" />
           {this.props.current.length === 0 ? (
-            <h1> User: Not found</h1>
+            <h1>Loading User</h1>
           ) : (
             <h1>User: {this.showUser()}</h1>
           )}
@@ -42,9 +47,9 @@ class ProfilePage extends Component {
           name="Create or Join a league"
         />
         <Button
-          link="#"
           className="delete-profile-button"
           name="Delete Profile"
+          onClick={() => this.deletedUser()}
         />
       </div>
     );
@@ -54,14 +59,21 @@ class ProfilePage extends Component {
 // makes the state availible as props of that same name in the component
 function mapStateToProps(state) {
   return {
-    current: state.user
+    current: state.user,
+    deleted: state.deleted
   };
 }
 
 // makes the action creators able to be called directly within our component
 // with the same name as the action creator itself
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchUser: fetchUser }, dispatch);
+  return bindActionCreators(
+    {
+      fetchUser: fetchUser,
+      deleteUser: deleteUser
+    },
+    dispatch
+  );
 }
 
 // turns the ProfilePage component into a container that has access to
