@@ -1,11 +1,18 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-
+const dotenv = require("dotenv");
+const webpack = require("webpack");
 // the htmlPlugin is the file location for
 // our finished, bundled html
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html"
 });
+
+const env = dotenv.config().parsed;
+const envKeys = Object.keys(env).reduce((prev, next) => {
+  prev[`process.env.${next}`] = JSON.stringify(env[next]);
+  return prev;
+}, {});
 
 module.exports = {
   devServer: {
@@ -44,5 +51,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [htmlPlugin]
+  plugins: [htmlPlugin, new webpack.DefinePlugin(envKeys)]
 };
